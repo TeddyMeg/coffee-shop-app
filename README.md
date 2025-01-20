@@ -1,50 +1,103 @@
-# Welcome to the Coffee Shop App 👋
+# Coffee Shop App ☕️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Welcome to the Coffee Shop App! This is a simple coffee shop application built using React Native and Expo. The app allows users to browse and order coffee from a virtual coffee shop.
 
-## Get started
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Directory Structure](#directory-structure)
+- [Screens](#screens)
+- [Contributing](#contributing)
+- [License](#license)
 
-1. Install dependencies
+## Installation
 
-   ```bash
+To get started with the Coffee Shop App, follow these steps:
+
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/TeddyMeg/coffee-shop-app.git
+   cd coffee-shop-app
+   ```
+
+2. **Install dependencies**:
+   ```sh
    npm install
    ```
 
-2. Start the app
-
-   ```bash
-    npx expo start
+3. **Start the app**:
+   ```sh
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Usage
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+After starting the app, you can open it in a development build, Android emulator, iOS simulator, or Expo Go. You can start developing by editing the files inside the `app` directory. This project uses file-based routing.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Directory Structure
 
-## Get a fresh project
+The directory structure of the Coffee Shop App is as follows:
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+coffee-shop-app/
+├── app/
+│  
+│   ├── home.tsx
+│   ├── menu.tsx
+│   ├── contact.tsx
+│   ├── components/
+│   │   ├── CoffeeItem.tsx
+│   │   ├── Header.tsx
+│   ├── constants/
+│   │   ├── Colors.ts
+│   │   ├── Fonts.ts
+│   ├── hooks/
+│   │   ├── useAuth.ts
+│   ├── navigation/
+│   │   ├── AppNavigator.tsx
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── coffee.png
+│   ├── app.json
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Directory Details
 
-## Learn more
+- **app/screens/**: Contains the main screens of the app, such as HomeScreen, MenuScreen, OrderScreen, and ProfileScreen.
+- **app/components/**: Contains reusable components like CoffeeItem and Header.
+- **app/constants/**: Contains constant values like Colors and Fonts used throughout the app.
+- **app/hooks/**: Contains custom hooks like useAuth for authentication.
+- **app/navigation/**: Contains navigation-related files like AppNavigator.
+- **app/assets/**: Contains static assets like images.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Screens
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### HomeScreen
+The HomeScreen is the main screen of the app, displaying a welcome message and a list of featured coffee items.
 
-## Join the community
+### MenuScreen
+The MenuScreen displays the full menu of available coffee items, allowing users to browse and select their favorite coffee.
 
-Join our community of developers creating universal apps.
+### ContactScreen
+The ContactScreen allows users to contact the Coffee Shop using either phone or sms.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to the Coffee Shop App, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+Feel free to customize this README file to better suit your project's needs. If you have any questions or need further assistance, let me know!
